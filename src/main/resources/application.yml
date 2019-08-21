@@ -4,7 +4,6 @@ spring:
       default-topic: kafka-tx-topic
       groupId: kafka-tx-group
     producer:
-      client-id: KafkaTxProducer
       transactionId-preffix: transaction.prefix.
     consumer:
       properties:
