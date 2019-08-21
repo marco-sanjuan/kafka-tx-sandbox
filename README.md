@@ -6,11 +6,11 @@
 
 `bin/kafka-server-start.sh config/server.properties`
 
-### Create topic
+### Create topic (only after first kafka start)
 
 `bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic kafka-tx-topic`
 
-### Start services:
+### Start services and check results
 
 1. Start `KafkaTxProducerApplication` to produce messages.
 1. Check console output.
